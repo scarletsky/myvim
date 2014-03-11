@@ -18,13 +18,17 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/taglist.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'mattn/emmet-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle "Raimondi/delimitMate"
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'Raimondi/delimitMate'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on     " required!
 "
@@ -97,6 +101,9 @@ let Tlist_Use_Right_Window=1
 set nocompatible
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
+
+" Emmet Config
+let g:user_emmet_expandabbr_key = '<Tab>'
 
 set runtimepath^=~/.vim/bundle/ctrlp
 

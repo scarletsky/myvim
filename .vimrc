@@ -18,7 +18,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'vim-scripts/taglist.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -29,6 +28,9 @@ Bundle 'honza/vim-snippets'
 Bundle 'Raimondi/delimitMate'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-commentary'
+Bundle 'Yggdroot/indentLine'
+Bundle 'fholgado/minibufexpl.vim'
 
 filetype plugin indent on     " required!
 "
@@ -88,22 +90,27 @@ nnoremap <silent> <F9> :TlistToggle<CR>
 nnoremap <leader>gd :GitDiff<CR>
 nnoremap <leader>gs :GitStatus<CR>
 
-" CtrlP plugin Config
+map <leader>il :IndentLinesToggle<CR>
+
+" CtrlP plugin Settings
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:ctrlp_map = '<c-p>'
 
-" Taglist Config
+" Taglist Settings
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 
-" PowerLine Config
+" PowerLine Settings
 set nocompatible
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
-" Emmet Config
+" Emmet Settings
 let g:user_emmet_expandabbr_key = '<Tab>'
+
+" Commentary Setting
+autocmd FileType python,shell set commentstring=#\ %s
 
 set runtimepath^=~/.vim/bundle/ctrlp
 

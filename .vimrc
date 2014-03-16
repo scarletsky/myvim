@@ -31,6 +31,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 Bundle 'Yggdroot/indentLine'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'ervandew/supertab'
 
 filetype plugin indent on     " required!
 "
